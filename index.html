@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>WEATHER MONITORING SYSTEM</h1>
+
+    </div>
+    <div class="search-section">
+        <input type="text" name="" id="input" placeholder="Enter city name">
+        <button id="search" onclick="searchByCity()">Search</button></input>
+    </div>
+    <main>
+        <div class="top-section">
+            <div class="weather">
+                <div class="content">
+                    <h2 id="city">Chennai,IN</h2>
+                    <div class="temp-box">
+                        <div> <img src="./images/weathericon.png" alt="" id="img">
+                            <span id="temperature">26 °C</span>
+                        </div>
+
+                        <span id="clouds">Broken Clouds</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="forecstH">
+                <p class="cast-header">Upcoming forecast</p>
+                <div class="templist">
+
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section-cotent">
+            <div class="d-flex">
+                <div class="section1">
+                    <div>
+                        <img class="icon1" src="./images/temp.png">
+                        <p id="feelsLike">31 °C</p>
+                        <p>feels_like</p>
+                    </div>
+                </div>
+                <div class="section1">
+                    <div>
+                        <img class="icon1" src="./images/humidity.png">
+                        <p id="humidity">89</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="section1">
+                    <div>
+                        <img class="icon1" src="./images/pressure.png">
+                        <p id="pressure">1001</p>
+                        <p>pressure</p>
+                    </div>
+                </div>
+                <div class="section1">
+                    <div>
+                        <img class="icon1" src="./images/pressure.png">
+                        <p id="wind">5 <span>KM/h</span></p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sun-section">
+                <div class="d-flex">
+                    <div class="sun-bg">
+                        <img class="icon" src="./images/sunrise.png" />
+                        <p id="sunrise">5.30 AM</p>
+                        <p>SUN RISE</p>
+                    </div>
+                    <div class="vr"></div>
+                    <div class="sun-bg">
+                        <img class="icon" src="./images/sunset.png" />
+                        <p id="sunset">5.50 PM</p>
+                        <p>SUN SET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forecstD">
+            <div class="divider2"></div>
+            <p class="cast-header"> Next 4 days forecast</p>
+            <div class="weekF">
+
+                <div class="dayF weather">
+                    <div class="content">
+                        <p class="date">Sun Jul 03 2022</p>
+                        <p>31 °C / 31 °C</p>
+                        <p class="desc">Overcast Clouds</p>
+                    </div>
+                </div>
+
+                <div class="dayF weather">
+                    <div class="content">
+                        <p class="date">Sun Jul 03 2022</p>
+                        <p>31 °C / 31 °C</p>
+                        <p class="desc">Overcast Clouds</p>
+                    </div>
+                </div>
+
+                <div class="dayF weather">
+                    <div class="content">
+                        <p class="date">Sun Jul 03 2022</p>
+                        <p>31 °C / 31 °C</p>
+                        <p class="desc">Overcast Clouds</p>
+                    </div>
+                </div>
+
+                <div class="dayF weather">
+                    <div class="content">
+                        <p class="date">Sun Jul 03 2022</p>
+                        <p>31 °C / 31 °C</p>
+                        <p class="desc">Overcast Clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forecstD top-section">
+            <div class="weather">
+                <div class="content air-section">
+                    <img id="airicon" src="./images/airicon.png">
+                    <p id="city">Air Pollution</p>
+                    <h2 id="airQuality">Good</h2>
+                </div>
+            </div>
+            <div>
+                <div class="air">
+                    <div class="airF">
+                        <p class="airpollution" id="co">352.19</p>
+                        <p class="description">Carbon Monoxide</p>
+                    </div>
+                    <div class="airF">
+                        <p class="airpollution" id="nh3">4.35</p>
+                        <p class="description">Ammonia</p>
+                    </div>
+                    <div class="airF">
+                        <p class="airpollution" id="no">5.37</p>
+                        <p class="description">Nitric oxide</p>
+                    </div>
+                </div>
+                <div class="air">
+                    <div class="airF">
+                        <p class="airpollution" id="no2">1.83</p>
+                        <p class="description">Nitrogen Dioxide</p>
+                    </div>
+                    <div class="airF">
+                        <p class="airpollution" id="o3">92.71</p>
+                        <p class="description">Ozone</p>
+                    </div>
+                    <div class="airF">
+                        <p class="airpollution" id="so2">382.19</p>
+                        <p class="description">Sulfur dioxide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>
